@@ -6,7 +6,6 @@ require "quickeebooks/online/model/phone"
 require "quickeebooks/online/model/web_site"
 require "quickeebooks/online/model/email"
 require "quickeebooks/online/model/open_balance"
-# require "quickeebooks/online/model/estimate_line_item"
 
 module Quickeebooks
   module Online
@@ -19,6 +18,7 @@ module Quickeebooks
         xml_accessor :meta_data,        :from => 'MetaData',   :as => Quickeebooks::Online::Model::MetaData
         xml_accessor :note,             :from => 'Note'
         xml_accessor :status,           :from => 'Status'
+        xml_accessor :billing_email,    :from => 'BillEmail'
         xml_accessor :message,          :from => 'Msg'
         xml_accessor :document_number,  :from => 'DocNumber'
         xml_accessor :transaction_date, :from => 'TxnDate'
