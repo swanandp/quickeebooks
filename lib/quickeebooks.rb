@@ -122,6 +122,9 @@ require 'quickeebooks/online/model/bill_payment'
 require 'quickeebooks/online/model/bill_payment_header'
 require 'quickeebooks/online/model/bill_payment_line_item'
 require 'quickeebooks/online/model/tracking_class'
+require 'quickeebooks/online/model/estimate_header'
+require 'quickeebooks/online/model/estimate_line_item'
+require 'quickeebooks/online/model/estimate'
 
 # Services
 require 'quickeebooks/online/service/filter'
@@ -146,6 +149,7 @@ require 'quickeebooks/online/service/journal_entry'
 require 'quickeebooks/online/service/employee'
 require 'quickeebooks/online/service/time_activity'
 require 'quickeebooks/online/service/tracking_class'
+require 'quickeebooks/online/service/estimate'
 
 #== Windows
 
