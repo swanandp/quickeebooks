@@ -202,6 +202,9 @@ require 'quickeebooks/windows/model/sync_status_drill_down'
 require 'quickeebooks/windows/model/sync_status_param'
 require 'quickeebooks/windows/model/sync_status_request'
 require 'quickeebooks/windows/model/sync_status_response'
+require 'quickeebooks/windows/model/estimate_header'
+require 'quickeebooks/windows/model/estimate_line_item'
+require 'quickeebooks/windows/model/estimate'
 
 
 # Services
@@ -227,3 +230,4 @@ require 'quickeebooks/windows/service/time_activity'
 require 'quickeebooks/windows/service/job'
 require 'quickeebooks/windows/service/sync_activity'
 require 'quickeebooks/windows/service/sync_status'
+require 'quickeebooks/windows/service/estimate'
