@@ -13,8 +13,6 @@ module Quickeebooks
       class EstimateHeader < Quickeebooks::Online::Model::IntuitType
 
         xml_convention :camelcase
-        xml_accessor :id,               :from => 'Id',         :as => Quickeebooks::Online::Model::Id
-        xml_accessor :sync_token,       :from => 'SyncToken',  :as => Integer
         xml_accessor :meta_data,        :from => 'MetaData',   :as => Quickeebooks::Online::Model::MetaData
         xml_accessor :note,             :from => 'Note'
         xml_accessor :status,           :from => 'Status'
