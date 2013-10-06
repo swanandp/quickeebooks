@@ -18,7 +18,7 @@ module Quickeebooks
         xml_accessor :status,           :from => 'Status'
         xml_accessor :bill_email,       :from => 'BillEmail'
         xml_accessor :message,          :from => 'Msg'
-        xml_accessor :document_number,  :from => 'DocNumber'
+        xml_accessor :doc_number,       :from => 'DocNumber'
         xml_accessor :transaction_date, :from => 'TxnDate'
         xml_accessor :customer_id,      :from => 'CustomerId', :as => Quickeebooks::Online::Model::Id
         xml_accessor :billing_address,  :from => 'BillAddr',   :as => Quickeebooks::Online::Model::Address
