@@ -4,7 +4,13 @@ module Quickeebooks
       class Filter
 
         DATE_FORMAT = '%Y-%m-%d'
-        DATE_TIME_FORMAT = '%Y-%m-%dT%H:%M:%S%Z'
+        # %Z reflects timezone, which results in incorrect format
+        # Correct dateTime formats according to documentation:
+        # https://developer.intuit.com/docs/0025_quickbooksapi/0050_data_services/v3/020_key_concepts/0700_other_topics#DateTime
+        # Local time zone  : YYYY-MM-DDTHH:MM:SS => 2012-10-10T12:00:00
+        # UTC: YYYY-MM-DDTHH:MM:SSZ => 2012-10-10T12:00:00Z
+        # Specific time zone: YYYY-MM-DDTHH:MM:SS+/-HH:MM => 2012-10-10T12:00:00+06:00
+        DATE_TIME_FORMAT = '%Y-%m-%dT%H:%M:%SZ'
 
         attr_reader :type
         attr_accessor :field, :value
